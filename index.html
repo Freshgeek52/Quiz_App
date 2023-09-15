@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="contenair">
+        <form method="post">
+            <div class="box-top">
+                <h1>Simple Quiz</h1>
+            </div>
+            <p class="ligne"></p>
+            <div class="middle-box">
+                <h2 id="question">What is your name?</h2>
+            </div>
+            <div id="answer">
+                <button type="button" class="btn" data-correct="true">A - Good</button>
+                <button type="button" class="btn" data-correct="true">B - Bad</button>
+                <button type="button" class="btn" data-correct="true">C - Great</button>
+                <button type="button" class="btn" data-correct="true">D - None</button>
+            </div>
+            <button type="button" id="next" data-correct="true">Next</button>
+        </div> 
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
