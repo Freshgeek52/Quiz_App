@@ -85,7 +85,7 @@ const questions = [
         answers:[
             { text: "2004", correct: false },
             { text: "2007", correct: false },
-            { text: "2014 Ebunoluwa Ogulu", correct: false },
+            { text: "2014", correct: false },
             { text: "2011", correct: true },
         ] 
     },
@@ -155,8 +155,8 @@ const questions = [
     {
         question: "Which music genre is Burna Boy primarily known for?",
         answers:[
-            { text: "Reggae", correct: true },
-            { text: "Afrofusion/Afrobeats", correct: false },
+            { text: "Reggae", correct: false },
+            { text: "Afrofusion/Afrobeats", correct: true },
             { text: "Hip Hop", correct: false },
             { text: "Dombolo", correct: false },
         ] 
@@ -229,7 +229,7 @@ function showScore(){
 }
 
 nextBtn.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length - 1) { // Using <= and subtracting 1
+    if (currentQuestionIndex < questions.length) { 
         handleNextButton();
     } else {
         startQuiz();
@@ -238,8 +238,8 @@ nextBtn.addEventListener("click", () => {
 
 
 function handleNextButton() {
-    if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++;
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
         showScore();
