@@ -40,6 +40,7 @@ form{
     padding: 20px;
     cursor: pointer;
     transition: all 0.2s;
+    font-size: 1rem;
   }
 
   .btn:hover:not([disabled]){
@@ -71,12 +72,12 @@ form{
   }
 
 .correct{
-    background: #1df67b;
+    background: #3ac175;
     color: white;
 }
 
 .incorrect{
-  background: #f32d2d;
+  background: #d84343;
   color: black;
 }
 
@@ -86,8 +87,13 @@ form{
   }
 }
 
-@media (max-width: 830px){
+@media (max-width: 450px){
   form{
-      width: 80%;
+      width: 100%;
+      font-weight: bold;
+  }
+
+  #answer .btn{
+    color: #222;
   }
 }
